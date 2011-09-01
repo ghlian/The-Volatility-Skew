@@ -46,7 +46,8 @@
 			</p>
 			
 			<p class="content_txt">
-			I welcome any pulls, fixes, suggestions, improvements, etc.  Complete source available 
+			I welcome any pulls, fixes, suggestions, improvements, etc.  
+			<a href="https://github.com/vergeman/The-Volatility-Skew">Complete source available</a> 
 			via github.
 			</p>
 			
