@@ -1,0 +1,383 @@
+@CHARSET "utf-8";
+
+/*
+ *LAYOUT 
+ *
+ */
+
+#header {
+	width: 100%;
+}
+
+#banner {
+	width: 310px;
+	padding-top: 1em;
+	margin: 0 auto;	
+}
+
+#nav_bar {
+	width: 380px;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
+
+#contract_wrap {
+	padding:20px 0px 15px 0px;
+	background-color:#FFF;
+	border-bottom: 2px solid #AAA;
+}
+
+#contract_select {
+	width: 480px;
+	margin: 0 auto;
+
+}
+
+#main {
+	margin-top: 20px;
+	padding: 1em;
+}
+
+#market_info {
+	float: left;
+	min-width: 200px;
+	width: 200px;
+	padding: 1em;
+	min-height: 200px;
+}
+
+td {
+	padding: 12px 10px 12px 0px;
+}
+
+th {
+	padding: 12px 10px 0px 0px;
+}
+
+td.last {
+	text-align:right;
+}
+
+.delete {
+	cursor: pointer;
+	padding-right: 10px;
+}
+
+#toggle {
+}
+
+#chart {
+	min-width: 520px;
+	width: 70%;
+	margin-left: 280px;
+	height: 500px;	
+}
+
+#save_graph {
+}
+
+#data{
+}
+
+.splash_txt {
+	margin-top: 30px;
+}
+
+#boxes {
+	width: 960px;
+	margin: 0px auto;
+	position: relative;
+	/*
+	 *position relative for text in boxes (see .box_txt)
+	 */
+}
+
+.box {
+	display: table-cell;
+	padding: 50px 25px;
+	vertical-align: top;
+}
+
+.box_content {
+	background:white;	
+	width: 230px;
+	height: 175px;
+	padding: 20px;
+	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	box-shadow: 0px 0px 1px 1px #b4aaa0;
+	-moz-box-shadow: 0px 0px 1px 1px #b4aaa0;
+	-webkit-box-shadow: 0px 0px 1px 1px #b4aaa0;
+	
+}
+
+.box_graphic {
+	text-align: center;	
+
+}
+
+.box_txt {
+	/*
+	 *	relative in #boxes
+	 */
+	position: absolute;  
+	top: 200px;
+	line-height: 1.5em;
+}
+
+#content {
+	//width: 460px;
+	width: 840px;
+	min-height: 500px;
+	margin: 0px auto;
+	padding: 1px 60px 60px 60px;
+	
+	background:white;
+	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	box-shadow: 0px 0px 1px 1px #b4aaa0;;
+	-moz-box-shadow: 0px 0px 1px 1px #b4aaa0;;
+	-webkit-box-shadow: 0px 0px 1px 1px #b4aaa0;;
+}
+
+#disqus_thread {
+	width: 960px;
+	margin: 0 auto;	
+}
+
+/*
+ * STRUCTURAL
+ *
+ */
+.navigation {
+	width: 380px;
+	margin: 0 auto;	
+}
+.navigation li {
+	display: inline;
+	padding: 0px 30px 0px 25px;	
+}
+
+legend {
+	display:none;	
+}
+
+#ticker_input, #month_input {
+	margin-right: 50px;	
+}
+
+.content_list {
+	margin-top: 20px;
+	margin-left: 60px;
+	list-style-type: disc;  	
+	line-height: 1.4em;
+}
+
+.content_list li {
+	margin: 5px;
+}
+
+/*forms*/
+#contract_add {
+	background: none repeat scroll 0 0 white;
+}
+
+p.contract_input {
+	display: table-cell;
+	vertical-align: middle;
+}
+label {
+	font-family: 'Rosario', Arial, Helvetica, sans-serif;
+	font-size: .80em;
+	display:block;
+	margin: 0px 0px 10px 0px;
+}
+#ticker_input, #month_input {
+
+	font-size: .9em;
+	border: 1px solid #DDD;	
+	//background: #EEE url(/jquery/images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x;
+	color: #333;
+}
+
+.contract-loading {
+	background: url('/jquery/images/ui-anim_basic_16x16.gif') right center no-repeat;
+	background-position-x: 90px;
+}
+#ticker_input:hover {
+	border: 1px solid orange;	
+}
+#month_input{
+	width: 125px;
+}
+
+#contract_add_submit {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:black;
+	font-family: 'Rosario', Arial, Helvetica, sans-serif;
+	font-size: .75em;
+	font-weight: 200;
+	padding:6px 8px;
+	text-decoration:none;
+	cursor: pointer;
+	margin-top:18px;
+}
+#contract_add_submit:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+	color:orange;
+}
+#contract_add_submit:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
+/*
+ *TYPOGRAPHY, LINKS
+ *
+ */
+body {
+	font-size: 1em;
+	background: url("/images/body_bg.png") repeat;
+}
+
+#header a:link {color: #EEEEEE;}
+#header a:visited {color: #EEEEEE;}
+#header a:hover {color: #FFA900;}
+#header a:active {color: white;}
+
+
+#header {
+	background-color: #303F60;
+
+}
+#header a {
+	text-decoration: none;
+
+}
+
+h1 {
+	font-family: 'Nixie One', Arial, Helvetica, cursive;
+	font-weight: 500;
+	font-size: 2em;
+}
+
+.navigation li {
+	font-family: 'Rosario', Arial, Helvetica, sans-serif; 
+	font-weight: 400;
+	font-size: 1.1em;	
+}
+#ticker_lbl {
+	font-style: italic;	
+}
+
+#market_info {
+	background: none repeat scroll 0 0 white;
+	border-color: #AAAAAA;
+	border-style: solid;
+	border-width: 2px;
+		
+}
+
+#market_info h2, #toggle h2 {
+	font-family: 'Play', Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+
+}
+#market_data_tbl thead th, #options_data_tbl thead th {
+	text-align: left;
+	font-size: .70em;
+}
+
+#market_data_tbl {
+	font-family: 'Questrial', Arial, Helvetica, sans-serif;
+	font-size: 1.0em;
+}
+.contract {
+ 	font-family: 'Questrial', Arial, Helvetica, sans-serif;
+	font-size: .75em;
+}
+.delete {
+	font-size: 0.75em;
+	color: red;
+}
+
+.ui-widget {
+	font-family: 'Rosario', Arial, Helvetica, sans-serif;
+	font-size: .80em;
+}
+
+.splash_header_txt {
+	font-family: 'News Cycle', Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	text-align: center;
+}
+
+.splash_txt {
+	font-family: 'News Cycle', Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+.box_header {
+	font-family: 'News Cycle', Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+.box_caption {
+	font-family: 'News Cycle', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+#content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.6em;
+}
+
+#content h1 {
+	font-size: 2.0em;
+	font-weight: 400px;
+	margin: 60px 0px 30px 0px;
+}
+.content_txt {
+	line-height: 1.6em;
+	margin: 30px 0px;
+}
+.content_header {
+	margin-top: 20px;
+	font-weight: bold;	
+}
+.content_list {
+	font-size: 14px;	
+	font-weight: bold;
+}
+.content_list_sub {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.6em;
+}

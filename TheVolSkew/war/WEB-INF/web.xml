@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>TheVolSkew</servlet-name>
+		<servlet-class>org.vergeman.thevolskew.servlet.VolSkewRequestServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TheVolSkew</servlet-name>
+		<url-pattern>/volskewrequest</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ContractMonth</servlet-name>
+		<servlet-class>org.vergeman.thevolskew.servlet.ContractMonthRequestServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ContractMonth</servlet-name>
+		<url-pattern>/contractmonth</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>about</servlet-name>
+        <jsp-file>/about.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>about</servlet-name>
+        <url-pattern>/about/*</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>faq</servlet-name>
+        <jsp-file>/faq.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>faq</servlet-name>
+        <url-pattern>/faq/*</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>contact</servlet-name>
+        <jsp-file>/contact.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>contact</servlet-name>
+        <url-pattern>/contact/*</url-pattern>
+    </servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>volskewrequest</welcome-file>
+	</welcome-file-list>
+</web-app>
