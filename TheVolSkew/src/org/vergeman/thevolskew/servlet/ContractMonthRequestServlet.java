@@ -55,6 +55,7 @@ public class ContractMonthRequestServlet extends HttpServlet {
 		if (data.request()) {
 
 			result = data.getResults().get(0);
+			result = result.substring(7, result.length()-2);
 			System.out.println(result);
 			try {
 				result_array = parser.parse(result).getAsJsonObject()

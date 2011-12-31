@@ -46,11 +46,12 @@ public class YQLQueryString {
 		StringBuilder strBld = new StringBuilder();
 		
 		strBld.append("http://query.yahooapis.com/v1/public/yql?q=");
-		strBld.append("use%20%22http%3A%2F%2Fthevolskew.appspot.com%2Fyahoo.finance.option_contracts.xml%22%20as%20mytable%3B%20");
-		strBld.append("SELECT%20*%20FROM%20mytable%20WHERE%20symbol%20%3D%20'");
+		//strBld.append("use%20%22http%3A%2F%2Fthevolskew.appspot.com%2Fyahoo.finance.option_contracts.xml%22%20as%20mytable%3B%20");
+		//strBld.append("SELECT%20*%20FROM%20mytable%20WHERE%20symbol%20%3D%20'");
+		strBld.append("SELECT%20*%20FROM%20yahoo.finance.option_contracts%20WHERE%20symbol%3D'");
 		strBld.append(ticker);
-		strBld.append("'%20&format=json");
-		
+		strBld.append("'&format=json");
+		strBld.append("&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=cbfunc");
 		return strBld.toString();
 	}
 	
