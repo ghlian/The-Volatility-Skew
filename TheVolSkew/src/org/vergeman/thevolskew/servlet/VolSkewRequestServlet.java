@@ -80,7 +80,7 @@ public class VolSkewRequestServlet extends HttpServlet {
 				
 				//==PARSE (populates hashes)==
 				for (String result : data.getResults()) {
-
+					System.out.println(result);
 					ResultParser.parse(result, stock_data, option_data);
 				}
 				

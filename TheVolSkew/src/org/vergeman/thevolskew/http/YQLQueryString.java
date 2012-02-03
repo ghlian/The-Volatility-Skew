@@ -5,6 +5,8 @@ public class YQLQueryString {
 	/*
 	 * ex: 
 	 * http://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20yahoo.finance.options%20WHERE%20symbol%3D%22GS%22%20AND%20expiration%3D%222011-09%22&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys
+	 * testing:
+	 * http://query.yahooapis.com/v1/public/yql?q=use%20%22http%3A%2F%2Fthevolskew.appspot.com%2Fyahoo.finance.options.xml%22%20SELECT%20*%20FROM%20yahoo.finance.options%20WHERE%20symbol%3D%22GOOG%22%20AND%20expiration%3D%222012-03%22&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&format=json
 	 */
 	public static String BuildOptionQueryString (String contract) {
 		String[] request = contract.split("\\s+");
@@ -13,7 +15,9 @@ public class YQLQueryString {
 		
 		StringBuilder strBld = new StringBuilder();
 		strBld.append("http://query.yahooapis.com/v1/public/yql?q=");
+		strBld.append("use%20%22http%3A%2F%2Fthevolskew.appspot.com%2Fyahoo.finance.options.xml%22");
 		strBld.append("SELECT%20*%20FROM%20yahoo.finance.options%20WHERE%20symbol%3D%22");
+		//strBld.append("SELECT%20*%20FROM%20yahoo.finance.options%20WHERE%20symbol%3D%22");
 		strBld.append(ticker);
 		strBld.append("%22%20AND%20expiration%3D%22");
 		strBld.append(format_date(date));
