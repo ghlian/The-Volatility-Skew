@@ -30,10 +30,8 @@ public class YQLRequest {
 	public YQLRequest(HashMap<String, Boolean> requests) {
 
 		this.urls = new ArrayList<URL>();
-		int i = 0;
 		for (String request : requests.keySet()) {
 			addRequest(request);
-			i++;
 		}
 	}
 
